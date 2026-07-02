@@ -13,10 +13,10 @@ export const profile = {
     "I care about the same things at every scale: clean architecture, secure access control, and interfaces that don't get in the way of the person using them.",
   ],
   email: "ebr1ma.smp@gmail.com",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "resume.pdf",
   availability: "Open to new projects",
   socials: [
-    { label: "GitHub", href: "https://github.com/" },
+    { label: "GitHub", href: "https://github.com/Sompombye001" },
   ],
 };
 

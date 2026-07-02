@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { ArrowDown, ArrowUpRight, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Github } from "lucide-react";
 import { profile, projects } from "@/data/content";
 
 const systemLog = projects
@@ -60,7 +60,7 @@ export default function Hero() {
           transition={{ delay: 1.2, duration: 0.6 }}
           className="absolute -left-2 top-0 hidden flex-col gap-5 lg:flex"
         >
-          {[Github, Linkedin, Twitter].map((Icon, i) => (
+          {[Github].map((Icon, i) => (
             <a
               key={i}
               href={profile.socials[i]?.href}

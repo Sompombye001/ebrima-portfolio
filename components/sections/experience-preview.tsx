@@ -11,7 +11,7 @@ export default function ExperiencePreview() {
               Experience
             </span>
             <h2 className="mt-3 font-display text-4xl font-medium tracking-tightest text-paper sm:text-5xl">
-              Three internships. One employer that kept calling back.
+              Three internships.
             </h2>
           </Reveal>
 
