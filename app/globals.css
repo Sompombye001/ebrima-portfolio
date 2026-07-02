@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #242938 transparent;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-ink text-paper font-body antialiased;
+  background-image: radial-gradient(
+      120% 100% at 50% -10%,
+      rgba(201, 162, 39, 0.09) 0%,
+      rgba(11, 13, 18, 0) 55%
+    ),
+    repeating-linear-gradient(
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.008) 3px
+    );
+}
+
+/* Visible keyboard focus everywhere — never remove outline without replacing it */
+:focus-visible {
+  outline: 2px solid #c9a227;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: #c9a227;
+  color: #0b0d12;
+}
+
+/* Respect reduced motion preference site-wide */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.container-page {
+  @apply mx-auto w-full max-w-[1400px] px-6 sm:px-10 lg:px-16;
+}
+
+.hairline {
+  @apply border-ink-line;
+}
+
+.status-chip {
+  @apply inline-flex items-center gap-2 rounded-full border border-ink-line bg-ink-surface/60 px-3 py-1.5 font-mono text-[11px] uppercase tracking-widest text-paper-muted backdrop-blur;
+}
+
+.gold-glow-text {
+  text-shadow: 0 0 24px rgba(232, 196, 104, 0.35);
+}
