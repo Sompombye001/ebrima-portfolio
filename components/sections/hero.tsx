@@ -110,7 +110,7 @@ export default function Hero() {
           className="mt-8 max-w-xl text-balance font-body text-lg text-paper-muted"
         >
           I&apos;m {profile.name}, an aspiring software engineer in {profile.location} building
-          demo production systems for government, banking, and commercial enterprises —
+          demo production systems for enterprises —
           alongside the CS degree that put me here.
         </motion.p>
 
